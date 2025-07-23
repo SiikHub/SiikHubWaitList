@@ -1,40 +1,39 @@
 "use client"
 
 import { Linkedin, Twitter, Mail } from "lucide-react"
+import Image from "next/image"
 
 export function TeamSection() {
   const team = [
     {
-      name: "Alex Johnson",
-      role: "CEO & Founder",
-      bio: "Former tech executive passionate about democratizing professional opportunities.",
-      image: "/placeholder.svg?height=300&width=300",
+      name: "Adebanji Akinsola",
+      role: "CEO & Founder - Mobile Developer",
+      // bio: "Building SiikHub to reshape how the world works — one connection, one opportunity, one creator at a time. I’m here to unlock access for the next billion professionals — helping them connect, get hired, showcase their skills, earn from what they do best, and get funded to bring big ideas to life.",
+      image: "/profile.jpeg?height=300&width=300",
       social: {
-        linkedin: "#",
-        twitter: "#",
-        email: "alex@siikhub.com",
+        linkedin: "https://www.linkedin.com/in/adebanji-akinsola-021564212/",
+        // twitter: "#",
+        // email: "adebanjiakinsola@gmail.com",
       },
     },
     {
-      name: "Maria Rodriguez",
-      role: "CTO",
-      bio: "Full-stack engineer with 10+ years building scalable platforms for millions of users.",
-      image: "/placeholder.svg?height=300&width=300",
+      name: "David Okunola",
+      role: "Backend Engineer",
+      image: "david.jpg?height=300&width=300",
       social: {
-        linkedin: "#",
-        twitter: "#",
-        email: "maria@siikhub.com",
+        linkedin: "https://www.linkedin.com/in/cyberride/",
+        // twitter: "#",
+        // email: "#",
       },
     },
     {
-      name: "David Chen",
-      role: "Head of Design",
-      bio: "UX designer focused on creating inclusive, accessible experiences for all professionals.",
-      image: "/placeholder.svg?height=300&width=300",
+      name: "Olamilekan Micah-Daniels",
+      role: "Frontend Engineer",
+      image: "/Micha.jpg?height=300&width=300",
       social: {
-        linkedin: "#",
-        twitter: "#",
-        email: "david@siikhub.com",
+        linkedin: "https://www.linkedin.com/in/olamilekan-micah-daniels-9a05a5259/",
+        // twitter: "#",
+        // email: "david@siikhub.com",
       },
     },
   ]
@@ -67,11 +66,13 @@ export function TeamSection() {
               <div className="relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
                 {/* Image */}
                 <div className="relative mb-6">
-                  <div className="w-24 h-24 mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-blue-100 to-purple-100">
-                    <img
-                      src={member.image || "/placeholder.svg"}
+                    <Image
+                      src={member.image || "/profile.jpeg"}
                       alt={member.name}
-                      className="w-full h-full object-cover"
+                      width={50}
+                      height={80}
+                      className="object-cover"
+                      style={{ width: "100%", height: "80%" }}
                     />
                   </div>
                 </div>
@@ -80,7 +81,7 @@ export function TeamSection() {
                 <div className="text-center">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{member.name}</h3>
                   <p className="text-indigo-600 font-semibold mb-4">{member.role}</p>
-                  <p className="text-gray-600 leading-relaxed mb-6">{member.bio}</p>
+                  {/* <p className="text-gray-600 leading-relaxed mb-6">{member.bio}</p> */}
 
                   {/* Social Links */}
                   <div className="flex justify-center space-x-4">
@@ -90,21 +91,20 @@ export function TeamSection() {
                     >
                       <Linkedin className="w-5 h-5 text-blue-600" />
                     </a>
-                    <a
+                    {/* <a
                       href={member.social.twitter}
                       className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center transition-colors duration-200"
                     >
                       <Twitter className="w-5 h-5 text-gray-600" />
-                    </a>
-                    <a
-                      href={`mailto:${member.social.email}`}
+                    </a> */}
+                    {/* <a
+                      // href={`mailto:${member.social.email}`}
                       className="w-10 h-10 bg-green-100 hover:bg-green-200 rounded-lg flex items-center justify-center transition-colors duration-200"
                     >
                       <Mail className="w-5 h-5 text-green-600" />
-                    </a>
+                    </a> */}
                   </div>
                 </div>
-              </div>
             </div>
           ))}
         </div>
