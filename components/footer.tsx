@@ -24,19 +24,19 @@ export function Footer() {
     {
       title: "Company",
       links: [
-        { name: "About Us", href: "#about" },
-        { name: "Our Story", href: "#story" },
-        { name: "Careers", href: "#careers" },
-        { name: "Press Kit", href: "#press" },
+        { name: "About Us", href: "/about" },
+        // { name: "Our Story", href: "#story" },
+        // { name: "Careers", href: "#careers" },
+        // { name: "Press Kit", href: "#press" },
       ],
-    },
-    {
+        },
+        {
       title: "Product",
       links: [
-        { name: "Features", href: "#features" },
-        { name: "Pricing", href: "#pricing" },
-        { name: "API Docs", href: "#api" },
-        { name: "Integrations", href: "#integrations" },
+        { name: "Features", href: "/#features" },
+        // { name: "Pricing", href: "#pricing" },
+        // { name: "API Docs", href: "#api" },
+        // { name: "Integrations", href: "#integrations" },
       ],
     },
     {
@@ -44,8 +44,8 @@ export function Footer() {
       links: [
         { name: "Blog", href: "#blog" },
         { name: "Help Center", href: "#help" },
-        { name: "Community", href: "#community" },
-        { name: "Webinars", href: "#webinars" },
+        { name: "Community", href: "https://whatsapp.com/channel/0029VaqenYl7IUYX4g5jiW40" },
+        // { name: "Webinars", href: "#webinars" },
       ],
     },
     {
@@ -53,17 +53,17 @@ export function Footer() {
       links: [
         { name: "Privacy Policy", href: "#privacy" },
         { name: "Terms of Service", href: "#terms" },
-        { name: "Cookie Policy", href: "#cookies" },
-        { name: "GDPR", href: "#gdpr" },
+        // { name: "Cookie Policy", href: "#cookies" },
+        // { name: "GDPR", href: "#gdpr" },
       ],
     },
   ]
 
   const socialLinks = [
-    { icon: Twitter, href: "#twitter", color: "hover:text-blue-400", name: "Twitter" },
+    { icon: Twitter, href: "https://x.com/SiikHub?t=3CJLtG0hMHbHPvf63ilM-w&s=08", color: "hover:text-blue-400", name: "Twitter" },
     { icon: Instagram, href: "#instagram", color: "hover:text-pink-400", name: "Instagram" },
-    { icon: Linkedin, href: "#linkedin", color: "hover:text-blue-600", name: "LinkedIn" },
-    { icon: Youtube, href: "#youtube", color: "hover:text-red-500", name: "YouTube" },
+    { icon: Linkedin, href: "https://www.linkedin.com/company/siikhub/", color: "hover:text-blue-600", name: "LinkedIn" },
+    // { icon: Youtube, href: "#youtube", color: "hover:text-red-500", name: "YouTube" },
   ]
 
   return (

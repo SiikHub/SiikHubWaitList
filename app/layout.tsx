@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'SiikHub',
-  description: 'Where professionals meet opportunities',
+  description: 'Connect. Grow. Earn',
 }
 
 export default function RootLayout({
