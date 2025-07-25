@@ -8,11 +8,12 @@ from datetime import datetime, timedelta
 from typing import Optional, List
 import re
 import uvicorn
-import os
+import os   
+
 
 # Database setup
-SQLALCHEMY_DATABASE_URL = "sqlite:///./siikhub_waitlist.db"
-engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False})
+DATABASE_URL= os.getenv("DATABASE_URL")
+engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 

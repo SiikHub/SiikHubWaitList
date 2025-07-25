@@ -4,7 +4,7 @@ import time
 
 # API base URL
 BASE_URL = "http://localhost:8000"
-
+2623233
 def test_health_check():
     """Test if the API is running"""
     try:
