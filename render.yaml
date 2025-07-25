@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: siikhub-frontend
+    env: node
+    buildCommand: cd frontend && pnpm install && pnpm run build
+    startCommand: cd frontend && pnpm run start
+    rootDir: frontend
+
+  - type: web
+    name: siikhub-backend
+    env: python
+    buildCommand: cd backend && pip install -r requirements.txt
+    startCommand: cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT
+    rootDir: backend
+    envVars:
+      - key: DATABASE_URL
+        sync: false
