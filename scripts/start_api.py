@@ -15,7 +15,7 @@ def install_requirements():
     
     print("📦 Installing Python packages...")
     for package in packages:
-        print(f"   Installing {package}...")
+        print(f"Installing {package}...")
         try:
             subprocess.check_call([sys.executable, "-m", "pip", "install", package], 
                                 stdout=subprocess.DEVNULL, 
